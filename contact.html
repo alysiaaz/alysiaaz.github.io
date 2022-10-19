@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Putri Alysia</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="https://instagram.com/putrialysiaa?r=nametag"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/qaspetals?s=11&t=XoClhRqNmiT2P5BwJnU-yg"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://open.spotify.com/user/9o7u3hfwdi55977exfy9kzxy6?si=884bade0584d4c07"><i class="fab fa-spotify"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+		<h1><a href="home.html"></a>Qashel Music</h1>
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="biodata.html">BIODATA</a></li>
+			<li><a href="dashboard.html">DASHBOARD</a></li>
+			<li><a href="login.html">LOGIN</a></li>
+			<li class="active"><a href= "contact.html">CONTACT</a></li>
+		</ul>
+		</div>
+	</header>
+
+	<div class="contact">
+	<form method = "post">
+		<div class ="form1">
+			<label>Nama : </label>
+			<input type = "text" id ="nama">
+		</div>
+		<div class="form1">
+			<label>Email : </label>
+			<input type = "text" id ="email">
+		</div>
+		<div class="form1">
+			<label>Pesan : </label>
+			<textarea rows="10" placeholder = "Silahkan masukkan Pesan Anda....." id = "pesan"></textarea>
+		</div>
+		<div class="form1">
+			<input type = "submit" class = "submit" value="Kirim" onclick="pengecekan2()" >
+		</div>
+	  </form>
+	</div>
+	</header>
+</div>
+
+<script language="JavaScript">
+	function pengecekan2(){
+		var nama1 = document.getElementById("nama").value;
+		var email1 = document.getElementById("email").value;
+		var pesan1 = document.getElementById("pesan").value;
+		if(nama1=="" || email1=="" || pesan==""){
+			window.alert("Silahkan masukkan Nama,Email,dan Pesan Anda!");
+		} else {
+		window.alert("Pesan Berhasil Dikirim.");
+		
+		}
+	}
+</script>

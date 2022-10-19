@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Putri Alysia</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="https://instagram.com/putrialysiaa?r=nametag"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/qaspetals?s=11&t=XoClhRqNmiT2P5BwJnU-yg"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://open.spotify.com/user/9o7u3hfwdi55977exfy9kzxy6?si=884bade0584d4c07"><i class="fab fa-spotify"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+		<h1><a href="home.html"></a>Qashel Music</h1>
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="biodata.html">BIODATA</a></li>
+			<li><a href="dashboard.html">DASHBOARD</a></li>
+			<li class="active"><a href="login.html">LOGIN</a></li>
+			<li><a href= "contact.html">CONTACT</a></li>
+		</ul>
+		</div>
+	</header>
+	<section class="login">
+		<div class="container">
+		</div>
+		<form class = "login" method = "post" onsubmit = "return tampil()" action="Dashboard.html">
+			<h1>Masukkan Username dan password untuk login</h1>
+			<input type = "text" placeholder = "Username" id = "username">
+			<input type = "password" placeholder = "Password" id = "password">
+			<input type = "submit" value="Login">
+			<div id ="peringatan" style="color:rgb(255, 208, 0)"></div>
+		  </form>
+		</header>
+	</div>
+
+	<script language="JavaScript">
+		function tampil(){
+			var uname = document.getElementById("username").value;
+			var pass = document.getElementById("password").value;
+			if(uname == "Alysiaaz" && password1 == "Alysiaaz26"){
+			  return true;
+			} else{
+			  var pesan = document.getElementById("peringatan").innerHTML = 
+			  "Terjadi Error";
+			  return false;
+			}
+		}
+	</script>
